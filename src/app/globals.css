@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nextpath-blue: #0a244d;
+  --nextpath-blue-light: #1a3a6b;
+  --nextpath-red: #dc2626;
+  --nextpath-red-hover: #b91c1c;
+  --nextpath-bg: #ffffff;
+  --nextpath-bg-secondary: #f8fafc;
+  --nextpath-text: #1f2937;
+  --nextpath-text-light: #6b7280;
+  --nextpath-border: #e5e7eb;
+}
+
+body {
+  font-family: var(--font-open-sans), sans-serif;
+  color: var(--nextpath-text);
+  background-color: var(--nextpath-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 700;
+}
+
+.font-heading {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.text-nextpath-blue {
+  color: var(--nextpath-blue);
+}
+
+.text-nextpath-red {
+  color: var(--nextpath-red);
+}
+
+.bg-nextpath-blue {
+  background-color: var(--nextpath-blue);
+}
+
+.bg-nextpath-blue-light {
+  background-color: var(--nextpath-blue-light);
+}
+
+.bg-nextpath-red {
+  background-color: var(--nextpath-red);
+}
+
+.bg-nextpath-red:hover {
+  background-color: var(--nextpath-red-hover);
+}
+
+.border-nextpath-border {
+  border-color: var(--nextpath-border);
+}
+
+.btn-primary {
+  background-color: var(--nextpath-red);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--nextpath-red-hover);
+}
+
+.btn-secondary {
+  background-color: var(--nextpath-blue);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--nextpath-blue-light);
+}
+
+/* Navigation styles */
+.nav-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hero section styles */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--nextpath-blue) 0%, var(--nextpath-blue-light) 100%);
+}
